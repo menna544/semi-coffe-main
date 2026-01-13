@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Coffe Shop</title>
+  <link rel="stylesheet" href="../css/signinup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Open+Sans:wght@700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="forms-container">
+      <div class="signin-signup">
+        <form action="#" class="sign-in-form">
+          <h2 class="title">Sign in now</h2>
+
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <label id="email-label">Email</label>
+            <input type="email" spellcheck="false" id="email-field" onkeyup="validateEmail()" />
+            <small id="email-error"></small>
+
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <label id="password-label">Enter password</label>
+            <input type="password" id="password-field" onkeyup="verifyPassword()">
+            <small id="password-error"></small>
+          </div>
+
+          <input type="button" value="sign in" class="btn solid" onclick="validateAll()" />
+          <p class="social-text">you can also sign in with</p>
+          <div class="social-media">
+            <a href="#" class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </form>
+        
+<form action="#" id="form" class="sign-up-form">
+  <h2 class="title">Register</h2>
+  <div class="input-field">
+      <i class="fas fa-user"></i>
+      <input type="text" placeholder="Name" id="username" required />
+      <div class="error" id="username-error"></div>
+  </div>
+  <div class="input-field">
+      <i class="fas fa-envelope"></i>
+      <input type="email" placeholder="Email" id="email" required />
+      <div class="error" id="email-error"></div>
+  </div>
+  <div class="input-field">
+      <i class="fas fa-phone"></i>
+      <input type="tel" placeholder="Phone" id="phone" required />
+      <div class="error" id="phone-error"></div>
+  </div>
+  <div class="input-field">
+      <i class="fas fa-lock"></i>
+      <input type="password" placeholder="Password" id="password" required />
+      <div class="error" id="password-error"></div>
+  </div>
+  <div>
+      <input type="checkbox" id="checkbox" required />
+      <label for="checkbox">I agree with the terms of the "Buyer Agreement"</label>
+      <div class="error" id="checkbox-error"></div>
+  </div>
+
+  <button type="button" class="btn" onclick="validateForm()">Submit</button>
+  <p class="social-text">You can also sign up with</p>
+  <div class="social-media">
+      <a href="#" class="social-icon">
+          <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="social-icon">
+          <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="social-icon">
+          <i class="fab fa-google"></i>
+      </a>
+      <a href="#" class="social-icon">
+          <i class="fab fa-linkedin-in"></i>
+      </a>
+  </div>
+</form>
+      </div>
+    </div>
+
+    <div class="panels-container">
+
+      <div class="panel left-panel">
+        <div class="content">
+
+          <h3>Don't have an account</h3>
+          <p>
+            create new account
+          </p>
+          <button class="btn transparent" id="sign-up-btn">
+            sign up
+          </button> or
+          <button class="btn transparent" id="go back" onclick="goback()">
+            go back
+          </button>
+        </div>
+        <img src="../images/register.svg" class="image" alt="Register" />
+      </div>
+      <div class="panel right-panel">
+        <div class="content">
+          <h3>Have an account?</h3>
+          <p>
+            you can sign in
+          </p>
+          <button class="btn transparent" id="sign-in-btn">
+            sign in
+          </button>
+        </div>
+        <img src="../images/login.svg" class="image" alt="Login" />
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/signinup.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

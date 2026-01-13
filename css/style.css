@@ -1,0 +1,749 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   font-family: 'Ubuntu', sans-serif;
+   
+}
+
+:root {
+    --main-color: #443;
+    --border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
+    --border-radius-hover: 4% 95% 6% 95% / 95% 4% 92% 5%;
+    --border: .2rem solid var(--main-color);
+    --border-hover: .2rem dashed var(--main-color);
+}
+html ::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html ::-webkit-scrollbar-thumb {
+
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+#navbar {
+    background-color: #edc8a3;
+      border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    position: fixed;    
+    box-shadow: 0 4px -2px black;
+    width: 100%;
+    font-size: 23px;
+}
+#navbarSupportedContent {
+    margin-right: 60px;
+}
+#logo{
+     color: #000; 
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 25px;
+}
+
+.navbar-nav {
+ margin-left: 50px;
+}
+
+.nav-item .nav-link {
+    color: #000;
+    margin-left: 30px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.nav-item .nav-link:hover {
+    background-color: #f7f5f2;
+    transition: 0.2s;
+    border-radius: 5px;
+    color: black;
+}
+
+#navbar .form button {
+    background: white;
+    color: black;
+   border-radius: 12px;
+}
+#navbar .form{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+#home {
+    width: 100%;
+    height: 95vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/Espresso-machine-working-with-bar-interior-background.jpeg);
+    background-size: cover;
+    background-position: 60%;
+}
+
+#home .content {
+    padding-top: 210px;
+    margin-left: 56px;
+}
+
+#home .content h3 {
+    font-size: 50px;
+    color: white;
+}
+.input-field label {
+    color: #666666;
+    margin-left: 8px;
+    font-size: 0.9em;
+  }
+.input-field input {
+    width: 100%;
+    height: 40px;
+    margin-left: 5px;
+    background: transparent;
+    border: 1px solid darkgray;
+    border-radius: 12px;
+    font-size: 1em;
+    color: black;
+  }
+#home .content p {
+    margin-top: 10px;
+    font-size: 19px;
+    color: white;
+    width: 650px;
+}
+.about-content p{
+    
+    width: 300px;
+}
+
+#btn {
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 20px;
+    font-weight: bold;
+    border: none;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.user:hover {
+    background-color: #f7f5f2;
+    transition: 0.2s;
+    border-radius: 5px;
+    color: black;
+}
+
+#btn:hover {
+    background: #110701;
+    color: white;
+    transition: 0.2s;
+}
+ .user{
+    color: #fff;
+}
+
+.features {
+    width: 100%;
+    padding: 80px 0;
+    text-align: center;
+    background-color: #fdf6f0; /* light beige */
+}
+
+.features .heading {
+    font-size: 36px;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.features .heading span {
+    color: #b2744c; /* coffee brown accent */
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.feature-card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    width: 230px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.feature-card img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    color: #4b2e1f;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.feature-card span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #b2744c;
+}
+
+
+#about {
+    
+    width: 100%;
+   
+    align-items: center;
+}
+.row1 {
+     width: 90%;
+     margin: 0 auto;
+     padding: 10px 20px;
+}
+.about{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.about-img{
+    border-radius: 20px;
+    flex: auto;
+    
+}
+.about-img img{
+max-width: 100%;
+height: auto;
+display: block;
+border-radius: 20px;
+transition: 0.5s ease;
+}
+.about-content{
+    margin-left: 9px;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 50px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.heading span {
+    color: #b2744c;
+}
+
+
+#about .card {
+  width: 100%;
+    border-radius: 10px;
+    color: white;
+}
+
+
+
+#brand {
+    height: 50vh;
+}
+
+#brand h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    color: #110701;
+}
+
+#brand h2 span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7px;
+    color: #b2744c;
+}
+.row{
+    overflow: hidden;
+    margin-left: 40px;
+}
+#brand .row img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+    }
+
+/* MENU */
+
+
+.menu .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.menu .box-container .box {
+    flex: 1 1 42rem;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    display: flex;
+    overflow: hidden;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.menu .box-container .box:hover {
+    border: var(--border-hover);
+    border-radius: var(--border-radius-hover);
+}
+
+.menu .box-container .box img {
+    height: 8rem;
+   
+}
+
+.menu .box-container .box .content h3 {
+    font-size: 2.2rem;
+    color: var(--main-color);
+    line-height: 1.8;
+}
+
+.menu .box-container .box .content p {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--main-color);
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .content span {
+    font-size: 2rem;
+    color: var(--main-color);
+    line-height: 1.8;
+}
+
+/* Responsive styling for smaller screens */
+@media screen and (max-width: 768px) {
+   
+    #home .content p {
+        margin-top: 10px;
+        font-size: 19px;
+        color: white;
+        width: 350px;
+    }
+ 
+    
+}
+.row img {
+    width: 400px;
+   
+}
+
+
+
+#product h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#product span {
+    color: #b2744c;
+}
+
+.products {
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    margin: 50px auto;
+    width: 100%;
+    grid-gap: 50px;
+    padding: 20px;
+}
+
+
+.product {
+
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 300px;
+    height: 250px;
+
+}
+
+.product .title {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.product .description {
+    padding: 0 20px 20px 20px;
+    line-height: 22px;
+}
+
+.product .price {
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    color: #9b0b03;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.product .cart {
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    background-color: #3e628f;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.product .cart i {
+    padding-left: 10px;
+}
+form{
+    border-radius: 10px;
+}
+#contact{
+    margin-bottom: 30px;
+}
+#contact .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #contact .container .map {
+    flex: 1 1 45rem;
+    object-fit: cover;
+    width: 100%;
+    
+  }
+  
+  #contact h1{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  #contact .container form {
+    flex: 1 1 45rem;
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+  
+  #contact .container form h3 {
+    text-transform: uppercase;
+    font-size: 35px;
+   
+  }
+  
+  #contact .container form .input-box {
+    display: flex;
+    color: #110701;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    height: 40px;
+  }
+  
+  #contact .container form .input-box span {
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+  }
+  
+  #contact .container form .input-box input {
+    width: 100%;
+    background: none;
+    text-transform: none;
+    padding: 1rem;
+    font-size: 20px;
+    border: none;
+    color: black;
+  }
+  
+  #contact .container form .button {
+    padding: 10px 30px;
+    text-transform: capitalize;
+    border: none;
+    font-size: 25px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  #contact .container form .button:hover {
+    letter-spacing: 2px;
+  }
+  
+  /* end contact  */
+ .foter {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #13131a;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.foter .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.foter .footer-top {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #444;
+}
+
+.foter .footer-top h3 {
+    margin-bottom: 15px;
+    color: #b2744c; /* coffee brown */
+    font-size: 22px;
+}
+
+.foter .links a,
+.foter .contact-info p a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.foter .links a:hover,
+.foter .contact-info p a:hover {
+    color: #b2744c;
+}
+
+.foter .contact-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.foter .icons a {
+    margin: 10px;
+    font-size: 20px;
+    list-style: none; 
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    text-align: center;
+    background-color: #4b2e1f; 
+    transition: 0.3s;
+}
+
+.foter .icons a:hover {
+    background-color: #b2744c;
+    color: #fff;
+}
+
+.foter .created {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #ccc;
+}
+
+.foter .created span {
+    font-weight: bold;
+    color: #b2744c;
+}
+
+/* Responsive Footer */
+@media screen and (max-width: 768px) {
+    .foter .footer-top {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+  
+  /* end footer  */
+ 
+
+
+/* Responsive styling for screens up to 982px */
+@media screen and (max-width: 982px) {
+    #about p {
+        font-size: 13px;
+        text-align: center;
+    }
+ 
+    #about {
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+    }
+    
+    .about-content p{
+        width: 400px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #contact .container .map {
+        flex: 1 1 45rem;
+        object-fit: cover;
+        width: 108.11%;
+    }
+    #contact .container form{
+        width: 130%;
+    }
+    #brand {
+        height: 120vh;
+    }
+
+    #contact .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .about{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    }
+
+    #brand h2 {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        color: #b2744c;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 50px auto;
+        grid-gap: 50px;
+        padding: 20px;
+    }
+}
+
+
+@media screen and (max-width: 512px) {
+    #about p {
+        font-size: 15px;
+        width: 230px;
+    }
+    #home .content h3 {
+        font-size: 30px;
+        color: white;
+    }
+    #home {
+        width: 100%;
+        height: 120vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/Espresso-machine-working-with-bar-interior-background.jpeg);
+        background-size: cover;
+        background-position: 60%;
+    }
+    .products {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+  
+    #home .content p {
+        margin-top: 10px;
+        font-size: 19px;
+        color: white;
+        width: 250px;
+    }
+    #about {
+        height: 130vh;
+    }
+   .about{
+     flex-wrap: wrap;
+    
+   }
+    #brand {
+        height: 130vh;
+    }
+}
+
+/* Additional responsive tyling for screens up to 400px */
+@media screen and (max-width: 370px) {
+    
+    #about {
+        height: 130vh;
+    }
+ 
+}
+@media (min-width: 371px) and (max-width: 395px) {
+    
+    #about {
+        height: 130vh;
+    }
+}
+
+@media screen and (width: 1024px){
+    #about{
+        height: 100vh;
+        
+    }
+    .about{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+    #about p{
+        width: 370px;
+    }
+}
+@media screen and (width: 1440px){
+    .about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}

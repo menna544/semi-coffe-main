@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>coffeshop ☕️</title>
+  <link rel="stylesheet" href="../css/style.css">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <div class="all-content">
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="logo">Coffee</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="fa-solid fa-bars" style="color: white; font-size: 23px;"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Savor the Perfect<br> Cup of Coffee ☕️</h3>
+        <p>
+          Coffee is flavoursome, fragrant and deeply rich in taste (using freshly roasted coffee beans).</p>
+        <button id="btn" onclick="product()">Order Now
+</button>
+      </div>
+    </section>
+    <!-- end home section  -->
+<section class="features" id="features">
+  <h1 class="heading">Our <span>Specialties</span></h1>
+  <div class="features-container">
+    
+    <div class="feature-card">
+      <img src="../images/6998fdb913eea7bf8e5d092aabadd2f5-removebg-preview.png" alt="Latte">
+      <h3> Strawberry Cheesecake </h3>
+      <p>Rich and creamy cheesecake, perfect for a sweet treat after coffee.</p>
+      <span>$5.50</span>
+    </div>
+
+    <div class="feature-card">
+      <img src="../images/iced-coff-preview.png" alt="Espresso">
+      <h3>Iced Coffee</h3>
+      <p>Refreshing cold brew coffee, ideal for a cool pick-me-up.</p>
+      <span>$4.00</span>
+    </div>
+
+    <div class="feature-card">
+      <img src="../images/c8140f7a52a1dbba12384748d853a235-removebg-preview.png" alt="Cappuccino">
+      <h3> Chocolate Cheesecake</h3>
+      <p>A second serving of our creamy cheesecake for extra indulgence.</p>
+      <span>$5.00</span>
+    </div>
+
+    <div class="feature-card">
+      <img src="../images/pro3-removebg-preview.png" alt="Mocha">
+      <h3>Iced Matcha</h3>
+      <p>Vibrant green matcha with milk and ice, a refreshing healthy choice.</p>
+      <span>$6.00</span>
+    </div>
+
+  </div>
+</section>
+
+   
+    <!-- start about  -->
+    <section class="about" id="about">
+     
+      <div class="container">
+        <h1 class="heading"> About <span>Us</span></h1>
+        
+        <div class="row1">
+          <div class="about">
+            <div class="about-img">
+              <img src="../images/0d87b7503518acbce8cc2284f608b2d0-removebg-preview.png" alt="">
+            </div>
+            <div class="about-content">
+              <h3>What Makes Our Coffee Special?</h3>
+              <p>you are an avid coffee drinker, chances are that you’ve come across the term specialty coffee at least once in the hunt for that perfect cup of coffee. Passionate baristas, latte art, manual coffee brewing, and tiny espresso drinks make up just a portion of the specialty coffee movement; the foundations run much deeper.</p>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+    </section>
+    <!--about end-->
+
+    <section id="contact">
+      <h1 class="heading">Contact <span>Us</span> </h1>
+      <div class="container">
+          <iframe class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.149864519135!2d31.138869715067827!3d29.9751227819076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584506784efed1%3A0x961ab3bea72d0739!2segypt%20pyramids%20inn!5e0!3m2!1sen!2seg!4v1657462371337!5m2!1sen!2seg"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <form id="contact-form">
+                <h3>get in touch</h3>
+                <div class="input-box">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="name" name="name" required>
+                </div>
+                <div class="input-box">
+                    <span class="fa-solid fa-envelope"></span>
+                    <input type="email" placeholder="email" id="email" name="email" required>
+                </div>
+                <div class="input-box">
+                    <span class="fa-solid fa-comment"></span>
+                    <input type="text" placeholder="Enter your problem" id="message" name="message" required>
+                </div>
+                <input type="submit" value="contact now" name="Contact_btn" class="button">
+            </form>
+      </div>
+  </section>
+  <!-- start footer -->
+<section class="foter">
+  <div class="container">
+
+    <!-- Top section: Links & Socials -->
+    <div class="footer-top">
+
+      <!-- Quick Links (scroll to sections in same page) -->
+      <div class="links">
+        <h3>Quick Links</h3>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@coffeeshop.com">info@coffeeshop.com</a></p>
+        <p>Phone: <a href="tel:+201234567890">+20 123 456 7890</a></p>
+        <p>Address: 123 Coffee Street, Cairo, Egypt</p>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="icons">
+        <h3>Follow Us</h3>
+        <a href="https://www.facebook.com/home.php" target="_blank" class="fa-brands fa-facebook-f"></a>
+        <a href="#" class="fa-brands fa-instagram"></a>
+        <a href="#" class="fa-brands fa-linkedin"></a>
+      </div>
+
+    </div>
+
+    <!-- Bottom section: Copyright -->
+    <div class="created">
+      created by <span>Menna Maged</span> | all rights reserved
+    </div>
+
+  </div>
+</section>
+<!-- end footer -->
+
+  </div>
+<script src="../js/script.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <!--bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+    <script>
+      emailjs.init("IxeuATO-NTcNPTIpp");
+      
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          
+        
+          emailjs.sendForm("service_kcp27mn", "template_jcxeiki", this)
+    .then(function(response) {
+        console.log('Sent successfully: ', response);
+        Swal.fire({
+    title: "Good job!",
+    text: "message sent successfully!",
+    icon: "success",
+  });
+    }, function(error) {
+        console.log('Failed to send: ', error);
+        Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "An error occurred. Please try again later!",
+    });
+    });
+    
+      });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
